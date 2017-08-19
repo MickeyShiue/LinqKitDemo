@@ -1,0 +1,22 @@
+﻿@model IEnumerable<LinqKitDemo.Models.LinqTest>
+
+<h2>Index</h2>
+
+<table border="1">
+    @foreach (var Item in Model)
+    {
+        <tr>
+            <td>
+                @Item.id
+            </td>
+            <td>
+                @Item.Name
+            </td>
+            <td>
+                @Item.Age
+            </td>
+        </tr>
+    }
+
+</table>
+
